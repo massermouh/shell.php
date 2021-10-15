@@ -6,10 +6,6 @@ error_reporting(0);
 set_time_limit(0);
 ini_set("memory_limit",-1);
 
-$leaf['version']="2.8";
-$leaf['website']="leafmailer.pw";
-
-
 $sessioncode = md5(__FILE__);
 if(!empty($password) and $_SESSION[$sessioncode] != $password){
     if (isset($_REQUEST['pass']) and $_REQUEST['pass'] == $password) {
